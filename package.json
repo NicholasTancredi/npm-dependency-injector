@@ -1,22 +1,25 @@
 {
-    "name": "npm-dependency-injector",
-    "version": "0.0.1",
-    "description": "Dependecy injector for pure functional npm modules.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/w0251251/dependency-injector.git"
-    },
-    "keywords": [
-        "dependecy"
-    ],
-    "author": "nicholas tancredi",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/w0251251/dependency-injector/issues"
-    },
-    "homepage": "https://github.com/w0251251/dependency-injector#readme"
+  "name": "npm-dependency-injector",
+  "version": "0.0.1",
+  "description": "Dependecy injector for pure functional npm modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w0251251/dependency-injector.git"
+  },
+  "keywords": [
+    "dependecy"
+  ],
+  "author": "nicholas tancredi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w0251251/dependency-injector/issues"
+  },
+  "homepage": "https://github.com/w0251251/dependency-injector#readme",
+  "dependencies": {
+    "uuid-v4": "^0.1.0"
+  }
 }
