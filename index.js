@@ -17,9 +17,3 @@ module.exports = ({dependencies}, func, ...args) =>
         )),
         ...args
     )
-
-
-// NOTE:
-    // Require your package.json file "require('./package.json')" as the first
-    // argument and your modules root function as the second argument followed
-    // by any additional arguments.
