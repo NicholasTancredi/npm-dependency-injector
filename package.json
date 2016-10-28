@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/w0251251/dependency-injector.git"
+        "url": "git+https://github.com/w0251251/npm-dependency-injector.git"
     },
     "keywords": [
         "dependecy"
@@ -16,9 +16,9 @@
     "author": "nicholas tancredi",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/w0251251/dependency-injector/issues"
+        "url": "https://github.com/w0251251/npm-dependency-injector/issues"
     },
-    "homepage": "https://github.com/w0251251/dependency-injector#readme",
+    "homepage": "https://github.com/w0251251/npm-dependency-injector#readme",
     "dependencies": {
         "uuid-v4": "^0.1.0"
     }
