@@ -1,12 +1,15 @@
 # npm-dependency-injector
 ## Dependecy injector for pure functional npm modules.
 ### installation
-npm i --save npm-dependency-injector
+npm install --save npm-dependency-injector
 ### usage
+Require your ```package.json``` file as the first
+argument and your modules root function as the second argument followed
+by any additional arguments.
 #### ./index.js
 ```javascript
 var dependencyInjector = require('npm-dependency-injector'),
-    packageJSON = require('../package.json'),
+    packageJSON = require('./package.json'),
     exampleFunction = require('./exampleFunction.js');
 
 module.exports = dependencyInjector(
@@ -21,7 +24,3 @@ module.exports = function(dependencies) {
     return uuid();
 };
 ```
-### NOTES:
-// Require your package.json file "require('./package.json')" as the first
-// argument and your modules root function as the second argument followed
-// by any additional arguments.
