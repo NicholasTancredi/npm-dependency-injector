@@ -3,7 +3,4 @@ var dependencyInjector = require('../index.js');
 var packageJSON = require('../package.json');
 var exampleFunction = require('./exampleFunction.js');
 
-module.exports = dependencyInjector(
-    packageJSON,
-    exampleFunction
-);
+module.exports = dependencyInjector(packageJSON, exampleFunction);

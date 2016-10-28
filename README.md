@@ -3,20 +3,19 @@
 ### installation
 npm i --save npm-dependency-injector
 ### usage
+#### ./index.js
 ```javascript
-// ./index.js
-
-var dependencyInjector = require('../index.js');
-// would actually be require('npm-dependency-injector')
-var packageJSON = require('../package.json');
-var exampleFunction = require('./exampleFunction.js');
+var dependencyInjector = require('npm-dependency-injector'),
+    packageJSON = require('../package.json'),
+    exampleFunction = require('./exampleFunction.js');
 
 module.exports = dependencyInjector(
     packageJSON,
     exampleFunction
 );
-
-// ./exampleFunction.js
+```
+#### ./exampleFunction.js
+```javascript
 module.exports = function(dependencies) {
     var uuid = dependencies['uuid-v4'];
     return uuid();
