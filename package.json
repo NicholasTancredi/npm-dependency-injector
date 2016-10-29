@@ -1,6 +1,6 @@
 {
     "name": "npm-dependency-injector",
-    "version": "0.0.111",
+    "version": "0.0.12",
     "description": "Dependecy injector for pure functional npm modules.",
     "main": "index.js",
     "scripts": {
@@ -19,7 +19,5 @@
         "url": "https://github.com/w0251251/npm-dependency-injector/issues"
     },
     "homepage": "https://github.com/w0251251/npm-dependency-injector#readme",
-    "dependencies": {
-        "uuid-v4": "^0.1.0"
-    }
+    "dependencies": {}
 }
