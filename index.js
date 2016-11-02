@@ -1,9 +1,14 @@
+const condition = _return => ({
+    [`is not production environment`]: process && process.env !== 'production' && _return,
+})
+
+const handleError = condition[`is not production environment`](console.error)
+const handlePackageInfoMessage = dependencies => package => `${package}@${dependencies[package]}`
+
 module.exports = ({dependencies}, func, ...args) =>
-    process.env !== 'production' && console.log(
+    handleError(
         `${func.name} requires that you install the following modules: `,
-        `npm install --save ${Object.keys(dependencies).map(package =>
-            `${package}@${dependencies[package]}`
-        ).join(' ')}`
+        `npm install --save ${Object.keys(dependencies).map(handlePackageInfoMessage(dependencies)).join(' ')}`
     )
 ||
     func.bind(
