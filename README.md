@@ -3,7 +3,6 @@
 ### installation
 npm install --save npm-dependency-injector
 ### usage
-#### NOTE: node_modules/uuid-v4 is only for the example.
 Require your ```package.json``` file as the first
 argument and your modules root function as the second argument followed
 by any additional arguments.
